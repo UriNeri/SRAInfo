@@ -7,7 +7,7 @@ Extracts basic information about a set of SRA accessions, starting with accessio
 
 
 
-Basic Syntax
+-> Basic Syntax
 
     python SRAInfo##.py SRAListFile
 
@@ -15,7 +15,7 @@ Where SRAListFile is a simple text file with one tab-delimited entry per line th
 
 
 
-Advanced Syntax
+-> Advanced Syntax
 
     python SRAInfo##.py SRAListFile <parameter1>=<value1>  <parameter2>=<value2> ...
 
@@ -23,13 +23,13 @@ Advanced Syntax
 
 
 
-  Output
+-> Output
 
    Output is a tab-delimited text file, each column having one attribute for a given SRA archive
 
 
 
-  Operation
+-> Operation
 
    SRAInfoFinder grabs metadata in real time from the NCBI website
 
@@ -43,7 +43,7 @@ Advanced Syntax
 
 
 
-  Optional Parameters <and defaults>
+-> Optional Parameters <and defaults>
 
    idcolumn=<0>      Which column in the input contains the SRR/DRR/ERR id
 
