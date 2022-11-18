@@ -23,13 +23,13 @@ Advanced Syntax
 
 
 
-Output
+  Output
 
    Output is a tab-delimited text file, each column having one attribute for a given SRA archive
 
 
 
-Operation
+  Operation
 
    SRAInfoFinder grabs metadata in real time from the NCBI website
 
@@ -43,7 +43,7 @@ Operation
 
 
 
-Optional Parameters <and defaults>
+  Optional Parameters <and defaults>
 
    idcolumn=<0>      Which column in the input contains the SRR/DRR/ERR id
 
