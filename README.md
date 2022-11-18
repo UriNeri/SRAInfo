@@ -5,39 +5,35 @@ FireLab_SRAInfoFinder version ah00 11-18-22
 
 Extracts basic information about a set of SRA accessions, starting with accession number
 
- Basic Syntax
+Basic Syntax
 
-   python SRAInfo##.py SRAListFile
+    python SRAInfo##.py SRAListFile
 
-      Where SRAListFile is a simple text file with one tab-delimited entry per line that
+Where SRAListFile is a simple text file with one tab-delimited entry per line that contains a SRR/ERR/DRR accession number (alternative: you can list individual SRR#s on command line) 
 
-        contains a SRR/ERR/DRR accession number (alternative: you can list individual SRR#s on command line) 
+Advanced Syntax
 
- Advanced Syntax
+    python SRAInfo##.py SRAListFile <parameter1>=<value1>  <parameter2>=<value2> ...
 
-   python SRAInfo##.py SRAListFile <parameter1>=<value1>  <parameter2>=<value2> ...
+  This syntax allows setting of a number of optional parameters
 
-      This syntax allows setting of a number of optional parameters
-
- Output
+Output
 
    Output is a tab-delimited text file, each column having one attribute for a given SRA archive
 
- Operation
+Operation
 
    SRAInfoFinder grabs metadata in real time from the NCBI website
 
    The retrieval is very sensitive to the way NCBI display is set up
 
-   So the program (in particular the "boundingtext1" dictionary
-
-     will need to be updated as the formats for display change
+   So the program (in particular the "boundingtext1" dictionary will need to be updated as the formats for display change
 
    There are some SRA entries where the information is not correctly parsed
 
    SRAInfoFinder can hang due to NCBI server issues.
 
- Optional Parameters <and defaults>
+Optional Parameters <and defaults>
 
    idcolumn=<0>      Which column in the input contains the SRR/DRR/ERR id
 
