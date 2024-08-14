@@ -28,7 +28,7 @@
       
 ## End Help        
 
-def PutURLTextIntoQueue1(acccession,url,Queue):
+def PutURLTextIntoQueue1(accession,url,Queue):
     import urllib.request
     MyText = ''
     try:
@@ -36,9 +36,9 @@ def PutURLTextIntoQueue1(acccession,url,Queue):
         MyText = str(MySite.read())
     except:
         print()
-        print('Retrieval Failure for Accession'+accession)
+        print('Retrieval Failure for Accession '+accession)
         print('Continuing without metadata for that entry in output table')
-    Queue.put((acccession,MyText))
+    Queue.put((accession,MyText))
 
 
 
